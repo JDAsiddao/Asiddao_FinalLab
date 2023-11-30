@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('category_name');
             $table->integer('user_id');
+            $table->string('category_image')->nullable();
             $table->timestamps();
             $table->SoftDeletes();
         });
