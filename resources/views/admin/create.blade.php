@@ -21,15 +21,14 @@
                     style="width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #ddd;"
                     value="{{ isset($category) ? $category->category_name : '' }}">
             </div>
-            <button type="submit" class="btn btn-primary"
-                style="width: 100%; padding: 10px; border-radius: 5px; background-color: #3490dc; color: #fff; border: none; cursor: pointer;">{{
-                isset($category) ? 'Update Category' : 'Create Category' }}</button>
-            <br><br>
             <div class="form-group" style="margin-bottom: 20px;">
                 <label for="category_image" style="font-weight: bold;">Image</label>
                 <input type="file" id="category_image" name="category_image" class="form-control" accept="image/*">
 
             </div>
+            <button type="submit" class="btn btn-primary"
+                style="width: 100%; padding: 10px; border-radius: 5px; background-color: #3490dc; color: #fff; border: none; cursor: pointer;">{{
+                isset($category) ? 'Update Category' : 'Create Category' }}</button>
         </form>
 
     </div>
